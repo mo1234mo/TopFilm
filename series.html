@@ -1,0 +1,544 @@
+<html lang="ku">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopFilm/Series</title>
+</head>
+
+<body id="seriespage">
+    <div class="page-container">
+        <div class="contents">
+            <form>
+                <div class="multipleSelection" dir="rtl">
+                    <div class="selectBox" onclick="showCheckboxes2()">
+                        <select>
+                            <option id="sort">ڕیزبەندی</option>
+                        </select>
+                        <div class="overSelect"></div>
+                    </div>
+
+                    <div id="checkBoxes2">
+                        <label for="action">
+                            <a href="">زۆرترین بینراو</a>
+                        </label>
+                        <label for="action">
+                            <a href="">بەرزترین ڕەیتینگ</a>
+                        </label>
+                        <label for="action">
+                            <a href="">کۆنترین</a>
+                        </label>
+                        <label for="action">
+                            <a href="">نوێترین</a>
+                        </label>
+                    </div>
+                </div>
+                <div class="multipleSelection" dir="rtl">
+                    <div class="selectBox" onclick="showCheckboxes()">
+                        <select>
+                            <option id="zhanar">ژانەر</option>
+                        </select>
+                        <div class="overSelect"></div>
+                    </div>
+
+                    <div id="checkBoxes">
+                        <label for="action">
+                            <input type="checkbox" id="action" />
+                            ئەکشن
+                        </label>
+
+                        <label for="comedy">
+                            <input type="checkbox" id="comedy" />
+                            کۆمیدی
+                        </label>
+                        <label for="drama">
+                            <input type="checkbox" id="drama" />
+                            دراما
+                        </label>
+                        <label for="fantasy">
+                            <input type="checkbox" id="fantasy" />
+                            خەیاڵی
+                        </label>
+                        <label for="s-fantasy">
+                            <input type="checkbox" id="s-fantasy" />
+                            زانستی خەیاڵی
+                        </label>
+                        <label for="adventure">
+                            <input type="checkbox" id="adventure" />
+                            سەرکێشی
+                        </label>
+                        <label for="crime">
+                            <input type="checkbox" id="crime" />
+                            تاوان
+                        </label>
+                        <label for="horror">
+                            <input type="checkbox" id="horror" />
+                            ترسناک
+                        </label>
+                        <label for="mystery">
+                            <input type="checkbox" id="mystery" />
+                            ئاڵۆز
+                        </label>
+                        <label for="war">
+                            <input type="checkbox" id="war" />
+                            جەنگ
+                        </label>
+                        <label for="history">
+                            <input type="checkbox" id="history" />
+                            مێژوویی
+                        </label><label for="documentary">
+                            <input type="checkbox" id="documentary" />
+                            بەڵگەنامەیی
+                        </label><label for="western">
+                            <input type="checkbox" id="western" />
+                            ڕۆژئاوایی
+                        </label><label for="romantic">
+                            <input type="checkbox" id="romantic" />
+                            ڕۆمانسی
+                        </label><label for="family">
+                            <input type="checkbox" id="family" />
+                            خێزانی
+                        </label>
+                    </div>
+                </div>
+            </form>
+            <script>
+                var show = true;
+                var show2 = true;
+
+                function showCheckboxes() {
+                    var checkboxes =
+                        document.getElementById("checkBoxes");
+
+                    if (show) {
+                        checkboxes.style.display = "block";
+                        show = false;
+                    } else {
+                        checkboxes.style.display = "none";
+                        show = true;
+                    }
+                }
+
+                function showCheckboxes2() {
+                    var checkboxesaa =
+                        document.getElementById("checkBoxes2");
+
+                    if (show2) {
+                        checkboxesaa.style.display = "block";
+                        show2 = false;
+                    } else {
+                        checkboxesaa.style.display = "none";
+                        show2 = true;
+                    }
+                }
+            </script>
+            <div class="centre">
+                <h1 class="line">
+                    <hr width="400px">زنجیرە
+                    <hr width="440px">
+                </h1>
+                <div class="all-cards">
+                    <a href="">
+                        <div class="card">
+                            <p class="name">Breaking bad</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/series/breaking-bad.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Breaking Bad (2008-2013)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:9.4</button></p>
+                                    </div>
+                                    <p>ژمارەی وەرز: 5</p>
+                                    <p>ژمارەی ئەڵقە: 62</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>TV-MA</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">Better Call Saul</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/series/call-saul.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Better Call Saul (2015-2022)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:8.8</button></p>
+                                    </div>
+                                    <p>ژمارەی وەرز: 6</p>
+                                    <p>ژمارەی ئەڵقە: 63</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>TV-MA</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a><a href="">
+                        <div class="card">
+                            <p class="name">Chernobyl</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/series/chrnobyl.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Chernobyl (2019)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:9.4</button></p>
+                                    </div>
+                                    <p>ژمارەی وەرز: 1</p>
+                                    <p>ژمارەی ئەڵقە: 5</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>TV-MA</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">Daredevil</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/series/daredevil.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Daredevil (2015-2018)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:8.6</button></p>
+                                    </div>
+                                    <p>ژمارەی وەرز: 3</p>
+                                    <p>ژمارەی ئەڵقە: 39</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>TV-MA</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">Dexter</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/series/dexter.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Dexter (2006-2013)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:8.6</button></p>
+                                    </div>
+                                    <p>ژمارەی وەرز: 8</p>
+                                    <p>ژمارەی ئەڵقە: 96</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>TV-MA</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">The Flash</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/series/flash.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <h3>The Flash (2014-.)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:7.6</button></p>
+                                    </div>
+                                    <p>ژمارەی وەرز: 8</p>
+                                    <p>ژمارەی ئەڵقە: 169</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>TV-MA</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">Friends</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/series/friends.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Friends (1994-2004)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:8.8</button></p>
+                                    </div>
+                                    <p>ژمارەی وەرز: 10</p>
+                                    <p>ژمارەی ئەڵقە: 235</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>TV-MA</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">Jumong</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/series/jumong.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Jumong (2006-2007)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:8.0</button></p>
+                                    </div>
+                                    <p>ژمارەی وەرز: 1</p>
+                                    <p>ژمارەی ئەڵقە: 81</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>TV-Y</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">Loki</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/series/loki.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Loki (2021-.)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:8.3</button></p>
+                                    </div>
+                                    <p>ژمارەی وەرز: 1</p>
+                                    <p>ژمارەی ئەڵقە: 7</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>TV-14</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">Mr. Robot</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/series/mr-robot.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Mr. Robot (2015-2019)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:8.5</button></p>
+                                    </div>
+                                    <p>ژمارەی وەرز: 4</p>
+                                    <p>ژمارەی ئەڵقە: 45</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>TV-MA</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">Prison Break</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/series/prison-break.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Prison Break (2005-2017)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:8.3</button></p>
+                                    </div>
+                                    <p>ژمارەی وەرز: 5</p>
+                                    <p>ژمارەی ئەڵقە: 90</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>TV-14</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">The Sopranos</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/series/sopranos.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <h3>The Sopranos (1999-2007)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:9.2</button></p>
+                                    </div>
+                                    <p>ژمارەی وەرز: 6</p>
+                                    <p>ژمارەی ئەڵقە: 86</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>TV-MA</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">Stranger Things</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/series/stranger-things.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Stranger Things (2016-.)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:8.7</button></p>
+                                    </div>
+                                    <p>ژمارەی وەرز: 4</p>
+                                    <p>ژمارەی ئەڵقە: 34</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>TV-14</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">The Last Kingdom</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/series/the-last-kingdom.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <h3>The Last Kingdom (2015-.)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:8.4</button></p>
+                                    </div>
+                                    <p>ژمارەی وەرز: 5</p>
+                                    <p>ژمارەی ئەڵقە: 46</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>TV-MA</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">The 100</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/series/the100.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <h3>The 100 (2014-2020)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:7.6</button></p>
+                                    </div>
+                                    <p>ژمارەی وەرز: 7</p>
+                                    <p>ژمارەی ئەڵقە: 100</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>TV-14</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">Vikings</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/series/viking.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Vikings (2013-2020)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:8.5</button></p>
+                                    </div>
+                                    <p>ژمارەی وەرز: 6</p>
+                                    <p>ژمارەی ئەڵقە: 93</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>TV-MA</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="nav">
+                <ul class="navbar" dir="rtl">
+                    <li><a href="index.html">سەرەتا</a></li>
+                    <li><a href="films.html">فیلم</a></li>
+                    <li><a href="film-s.html">زنجیرە فیلم</a></li>
+                    <li><a href="series.html">زنجیرە</a></li>
+                    <li><a href="anim.html">ئەنیمەیشن</a></li>
+                    <li><a href="about.html">دەربارە</a></li>
+                    <li><a href="login.html">چوونە ژوورەوە</a></li>
+                    <div class="search">
+                        <input type="text" placeholder="گەڕان">
+                        <button>گەڕان</button>
+                    </div>
+                </ul>
+                <div class="navResponsive" dir="rtl">
+
+                    <label for="touch"><span><img src="icon/burger.png" alt="" width="20px"
+                                height="20px"></span></label>
+                    <input type="checkbox" id="touch">
+
+                    <ul class="slide" dir="rtl">
+                        <li><a href="index.html">سەرەتا</a></li>
+                        <li><a href="films.html">فیلم</a></li>
+                        <li><a href="film-s.html">زنجیرە فیلم</a></li>
+                        <li><a href="series.html">زنجیرە</a></li>
+                        <li><a href="anim.html">ئەنیمەیشن</a></li>
+                        <li><a href="about.html">دەربارە</a></li>
+                        <li><a href="login.html">چوونە ژوورەوە</a></li>
+                    </ul>
+                    <div class="search-responsive">
+                        <input type="text" placeholder="گەڕان">
+                        <button>گەڕان</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div id="socials">
+                <a href=""><img src="icon/fb.png" alt=""></a>
+                <a href=""><img src="icon/instagram.png" alt=""></a>
+                <a href=""><img src="icon/telegram.png" alt=""></a>
+                <a href=""><img src="icon/twitter.png" alt=""></a>
+            </div>
+            <div id="copyright">مافی سەرجەم بەرهەمەکان پارێزراوە بۆ<br>(تۆپ فیلم)</div>
+        </footer>
+    </div>
+</body>
+
+</html>

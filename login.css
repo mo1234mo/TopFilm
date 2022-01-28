@@ -1,0 +1,638 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: speda;
+    src: url(Speda.ttf);
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    background-attachment: fixed;
+    background-image: url(backgrounds/login.jpg);
+}
+
+.page-container {
+    position: relative;
+    min-height: 83vh;
+}
+
+.contents {
+    padding-bottom: 2.5rem;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.nav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar {
+    list-style: none;
+    text-align: center;
+    background-color: #1A5F7A;
+    border-radius: 30px;
+    margin: 10px auto;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 60px;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.6);
+}
+
+.nav .navbar li {
+    display: inline-block;
+}
+
+.nav .navbar li a {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: speda;
+    text-transform: uppercase;
+    margin: 0 10px;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+.nav .navbar li a:hover {
+    background-color: #072227;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.nav .navbar li a:after {
+    transition: 0.5s;
+}
+
+.navbar .search input {
+    height: 25px;
+    border-radius: 20px;
+    border: 1px solid white;
+    outline: none;
+    font-family: speda;
+    width: 200px;
+}
+
+.navbar .search button {
+    height: 35px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+    margin: auto 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.navbar .search button:hover {
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.footer {
+    margin-top: 100px;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #1A5F7A;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#socials-about {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#socials-about img {
+    height: 30px;
+    width: 30px;
+    margin: auto 20px auto 20px;
+}
+
+#socials img {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+    margin-top: 5px
+}
+
+#copyright {
+    text-align: center;
+    font-family: speda;
+    color: white;
+    font-weight: 200;
+    margin-top: 0;
+    margin-right: 20px;
+}
+
+
+
+.main {
+    width: 350px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#chk {
+    display: none;
+}
+
+.signup {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.main label {
+    color: #fff;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.main input {
+    width: 60%;
+    height: 20px;
+    background: #e0dede;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.main button {
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background: #1A5F7A;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+.main button:hover {
+    background: #333;
+}
+
+.login {
+    height: 460px;
+    background: #eee;
+    border-radius: 600px / 100px;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+}
+
+.login label {
+    color: #1A5F7A;
+    transform: scale(.6);
+}
+
+#chk:checked~.login {
+    transform: translateY(-500px);
+}
+
+#chk:checked~.login label {
+    transform: scale(1);
+}
+
+#chk:checked~.signup label {
+    transform: scale(.6);
+}
+
+.centre {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.all-cards {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 0;
+    margin: 150px auto 0 auto;
+}
+
+.detail {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    justify-content: right;
+    text-align: right;
+    width: 80%;
+    padding: 0;
+    margin: 150px auto 0 auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+}
+
+.poster {
+    width: 20%;
+}
+
+.poster img {
+    width: 250px;
+    height: 400px;
+    margin-left: 10px;
+}
+
+.texts {
+    width: 40%;
+}
+
+.server button {
+    width: 100px;
+    border-radius: 10px;
+    background-color: #1A5F7A;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-size: medium;
+    font-family: speda;
+}
+
+.server button:hover {
+    text-decoration: underline;
+    background-color: #072227;
+}
+
+.detail-centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+.detail-centre .texts h1 {
+    color: darkkhaki;
+    margin: 10px;
+    font-family: speda;
+    font-size: larger;
+}
+
+.detail-centre .texts p {
+    color: white;
+    margin: 10px;
+    font-family: speda;
+    font-size: larger;
+}
+
+.cast {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.cast p {
+    font-size: large !important;
+}
+
+.detail-centre b {
+    margin-left: 10px;
+    color: #1A5F7A;
+}
+
+.texts p button {
+    background-color: rgb(207, 178, 10);
+    width: 80px;
+    border-radius: 10px;
+}
+
+.trailer {
+    width: 40%;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.tr-line {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.tr-line hr {
+    height: 0.5px;
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trailer video {
+    height: 294px;
+    width: 400px;
+    padding: 0;
+    margin: 0;
+}
+
+.trailer h1 {
+    color: white;
+    margin: 10px;
+    font-family: speda;
+    font-size: larger;
+    text-align: center;
+    justify-content: center;
+}
+
+.navResponsive {
+    width: 100%;
+    background: #1A5F7A;
+    margin: 10px 0 auto auto;
+    display: none;
+    border-radius: 30px;
+}
+
+.navResponsive .search-responsive {
+    text-align: right;
+    justify-content: space-between;
+    display: flex;
+}
+
+.search-responsive input {
+    height: 40px;
+    margin: 10px;
+    margin-bottom: 0;
+    margin-left: 5px;
+    border-radius: 20px;
+    border: 1px solid white;
+    outline: none;
+    font-family: speda;
+    width: 150px;
+}
+
+.search-responsive button {
+    height: 40px;
+    width: 50px;
+    margin: 10px;
+    margin-bottom: 0;
+    margin-right: 0;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.navResponsive span {
+    padding: 20px 10px;
+    background: #2d2f31;
+    color: white;
+    font-size: 1.2em;
+    font-variant: small-caps;
+    cursor: pointer;
+    display: block;
+
+}
+
+.navResponsive span::after {
+    float: right;
+    right: 10%;
+    content: "";
+}
+
+.slide {
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    text-align: right;
+    transition: height .4s ease;
+}
+
+.slide li {
+    padding: 5px;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.slide li a {
+    text-decoration: none;
+    color: white;
+    font-family: speda;
+    font-size: 20px;
+}
+
+.slide li:hover {
+    background-color: #072227;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.slide li:after {
+    transition: 1s;
+}
+
+#touch {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch:checked+.slide {
+    height: 280px;
+    margin-top: 60px;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+    .search-responsive input {
+        width: 80px;
+    }
+
+    .search-responsive button {
+        width: 32px;
+        font-size: small;
+    }
+
+    .slide li a {
+        font-size: small;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navResponsive {
+        display: flex;
+    }
+
+    .contents {
+        padding-bottom: 10rem;
+    }
+
+    .footer {
+        height: 100px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #socials {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #copyright {
+        margin: auto;
+        margin-right: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 1280px) and (min-width: 601px) {
+
+    .search-responsive input {
+        width: 180px;
+    }
+
+    .search-responsive button {
+        width: 40px;
+        font-size: small;
+    }
+
+    .slide li a {
+        font-size: small;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navResponsive {
+        display: flex;
+    }
+
+    .contents {
+        padding-bottom: 10rem;
+    }
+
+    .footer {
+        height: 100px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #socials {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #copyright {
+        margin: auto;
+        margin-right: 10px;
+    }
+
+    .page-container {
+        min-height: 89vh;
+    }
+
+    .main {
+        width: 400px;
+        height: 600px;
+        margin-top: 130px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    .search-responsive input {
+        width: 80px;
+    }
+
+    .search-responsive button {
+        width: 32px;
+        font-size: small;
+    }
+
+    .slide li a {
+        font-size: small;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navResponsive {
+        display: flex;
+    }
+
+    .contents {
+        padding-bottom: 10rem;
+    }
+
+    .footer {
+        height: 100px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #socials {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #copyright {
+        margin: auto;
+        margin-right: 10px;
+    }
+
+    .main {
+        width: 250px;
+    }
+
+    #touch:checked+.slide {
+        height: 320px;
+        margin-top: 60px;
+    }
+}

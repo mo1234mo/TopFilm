@@ -1,0 +1,544 @@
+<html lang="ku">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopFilm/Films</title>
+</head>
+
+<body id="filmpage">
+    <div class="page-container">
+        <div class="contents">
+            <form>
+                <div class="multipleSelection" dir="rtl">
+                    <div class="selectBox" onclick="showCheckboxes2()">
+                        <select>
+                            <option id="sort">ڕیزبەندی</option>
+                        </select>
+                        <div class="overSelect"></div>
+                    </div>
+
+                    <div id="checkBoxes2">
+                        <label for="action">
+                            <a href="">زۆرترین بینراو</a>
+                        </label>
+                        <label for="action">
+                            <a href="">بەرزترین ڕەیتینگ</a>
+                        </label>
+                        <label for="action">
+                            <a href="">کۆنترین</a>
+                        </label>
+                        <label for="action">
+                            <a href="">نوێترین</a>
+                        </label>
+                    </div>
+                </div>
+                <div class="multipleSelection" dir="rtl">
+                    <div class="selectBox" onclick="showCheckboxes()">
+                        <select>
+                            <option id="zhanar">ژانەر</option>
+                        </select>
+                        <div class="overSelect"></div>
+                    </div>
+
+                    <div id="checkBoxes">
+                        <label for="action">
+                            <input type="checkbox" id="action" />
+                            ئەکشن
+                        </label>
+
+                        <label for="comedy">
+                            <input type="checkbox" id="comedy" />
+                            کۆمیدی
+                        </label>
+                        <label for="drama">
+                            <input type="checkbox" id="drama" />
+                            دراما
+                        </label>
+                        <label for="fantasy">
+                            <input type="checkbox" id="fantasy" />
+                            خەیاڵی
+                        </label>
+                        <label for="s-fantasy">
+                            <input type="checkbox" id="s-fantasy" />
+                            زانستی خەیاڵی
+                        </label>
+                        <label for="adventure">
+                            <input type="checkbox" id="adventure" />
+                            سەرکێشی
+                        </label>
+                        <label for="crime">
+                            <input type="checkbox" id="crime" />
+                            تاوان
+                        </label>
+                        <label for="horror">
+                            <input type="checkbox" id="horror" />
+                            ترسناک
+                        </label>
+                        <label for="mystery">
+                            <input type="checkbox" id="mystery" />
+                            ئاڵۆز
+                        </label>
+                        <label for="war">
+                            <input type="checkbox" id="war" />
+                            جەنگ
+                        </label>
+                        <label for="history">
+                            <input type="checkbox" id="history" />
+                            مێژوویی
+                        </label><label for="documentary">
+                            <input type="checkbox" id="documentary" />
+                            بەڵگەنامەیی
+                        </label><label for="western">
+                            <input type="checkbox" id="western" />
+                            ڕۆژئاوایی
+                        </label><label for="romantic">
+                            <input type="checkbox" id="romantic" />
+                            ڕۆمانسی
+                        </label><label for="family">
+                            <input type="checkbox" id="family" />
+                            خێزانی
+                        </label>
+                    </div>
+                </div>
+            </form>
+            <script>
+                var show = true;
+                var show2 = true;
+
+                function showCheckboxes() {
+                    var checkboxes =
+                        document.getElementById("checkBoxes");
+
+                    if (show) {
+                        checkboxes.style.display = "block";
+                        show = false;
+                    } else {
+                        checkboxes.style.display = "none";
+                        show = true;
+                    }
+                }
+
+                function showCheckboxes2() {
+                    var checkboxesaa =
+                        document.getElementById("checkBoxes2");
+
+                    if (show2) {
+                        checkboxesaa.style.display = "block";
+                        show2 = false;
+                    } else {
+                        checkboxesaa.style.display = "none";
+                        show2 = true;
+                    }
+                }
+            </script>
+            <div class="centre">
+                <h1 class="line">
+                    <hr width="400px">فیلم
+                    <hr width="450px">
+                </h1>
+                <div class="all-cards">
+                    <a href="">
+                        <div class="card">
+                            <p class="name">Spider-man: no way home</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/film/spiderman.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <br>
+                                    <h3>Spider-man no way home (2021)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:8.8</button></p>
+                                    </div>
+                                    <p>ماوە: 148 خولەک</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>PG-13</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">Avatar</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/film/Avatar.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <br>
+                                    <h3>Avatar (2009)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:7.8</button></p>
+                                    </div>
+                                    <p>ماوە: 162 خولەک</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>PG-13</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a><a href="">
+                        <div class="card">
+                            <p class="name">Dune</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/film/dune.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <br>
+                                    <h3>Dune (2021)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:8.1</button></p>
+                                    </div>
+                                    <p>ماوە: 155 خولەک</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>PG-13</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">Doctor Strange 2</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/film/doctor-strange-2.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <br>
+                                    <h3>Doctor Strange (2016)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:7.5</button></p>
+                                    </div>
+                                    <p>ماوە: 115 خولەک</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>PG-13</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">Blad runner 2049</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/film/blade-runner.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <br>
+                                    <h3>Blade Runner 2049 (2017)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:8.0</button></p>
+                                    </div>
+                                    <p>ماوە: 164 خولەک</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>R</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">Django Unchained</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/film/django.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <br>
+                                    <h3>Django Unchained (2012)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:8.4</button></p>
+                                    </div>
+                                    <p>ماوە: 165 خولەک</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>R</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">Fast Five</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/film/fast-and-furious5.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <br>
+                                    <h3>Fast Five (2011)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:7.3</button></p>
+                                    </div>
+                                    <p>ماوە: 130 خولەک</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>PG-13</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">The Great Battle</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/film/great-battle.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <br>
+                                    <h3>The Great Battle (2018)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:7.0</button></p>
+                                    </div>
+                                    <p>ماوە: 136 خولەک</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>PG-13</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">Inception</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/film/inception.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <br>
+                                    <h3>Inception (2010)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:8.8</button></p>
+                                    </div>
+                                    <p>ماوە: 148 خولەک</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>PG-13</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">Interstellar</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/film/interstellar.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <br>
+                                    <h3>Interstellar (2014)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:8.6</button></p>
+                                    </div>
+                                    <p>ماوە: 169 خولەک</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>PG-13</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">Jurrasic World</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/film/jurrasic.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <br>
+                                    <h3>Jurrasic World (2015)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:7.0</button></p>
+                                    </div>
+                                    <p>ماوە: 124 خولەک</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>PG-13</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">No Time To Die</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/film/no-time-to-die.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <br>
+                                    <h3>No Time To Die (2021)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:7.4</button></p>
+                                    </div>
+                                    <p>ماوە: 163 خولەک</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>PG-13</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">The Conjuring</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/film/the-conjuring.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <br>
+                                    <h3>The Conjuring (2013)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:7.5</button></p>
+                                    </div>
+                                    <p>ماوە: 112 خولەک</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>R</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">The Dark Knight</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/film/The-Dark-Knight.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <br>
+                                    <h3>The Dark Knight (2008)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:9.0</button></p>
+                                    </div>
+                                    <p>ماوە: 152 خولەک</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>PG-13</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">The Last Samurai</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/film/the-last-samurai-3.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <br>
+                                    <h3>The Last Samurai (2003)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:7.7</button></p>
+                                    </div>
+                                    <p>ماوە: 154 خولەک</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>R</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <p class="name">War</p>
+                            <div class="card-in">
+                                <div class="card-front">
+                                    <img src="poster/film/war.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <br>
+                                    <h3>War (2019)</h3>
+                                    <div dir="rtl">
+                                        <p>هەڵسەنگاندن:</p>
+                                        <p><button>IMDB:6.5</button></p>
+                                    </div>
+                                    <p>ماوە: 154 خولەک</p>
+                                    <div style="display: flex; margin-right: 50px;" dir="rtl">
+                                        <p dir="rtl" style="margin-left: 10px;">ئاست: <p>PG-13</p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="nav">
+                <ul class="navbar" dir="rtl">
+                    <li><a href="index.html">سەرەتا</a></li>
+                    <li><a href="films.html">فیلم</a></li>
+                    <li><a href="film-s.html">زنجیرە فیلم</a></li>
+                    <li><a href="series.html">زنجیرە</a></li>
+                    <li><a href="anim.html">ئەنیمەیشن</a></li>
+                    <li><a href="about.html">دەربارە</a></li>
+                    <li><a href="login.html">چوونە ژوورەوە</a></li>
+                    <div class="search">
+                        <input type="text" placeholder="گەڕان">
+                        <button>گەڕان</button>
+                    </div>
+                </ul>
+                <div class="navResponsive" dir="rtl">
+
+                    <label for="touch"><span><img src="icon/burger.png" alt="" width="20px"
+                                height="20px"></span></label>
+                    <input type="checkbox" id="touch">
+
+                    <ul class="slide" dir="rtl">
+                        <li><a href="index.html">سەرەتا</a></li>
+                        <li><a href="films.html">فیلم</a></li>
+                        <li><a href="film-s.html">زنجیرە فیلم</a></li>
+                        <li><a href="series.html">زنجیرە</a></li>
+                        <li><a href="anim.html">ئەنیمەیشن</a></li>
+                        <li><a href="about.html">دەربارە</a></li>
+                        <li><a href="login.html">چوونە ژوورەوە</a></li>
+                    </ul>
+                    <div class="search-responsive">
+                        <input type="text" placeholder="گەڕان">
+                        <button>گەڕان</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div id="socials">
+                <a href=""><img src="icon/fb.png" alt=""></a>
+                <a href=""><img src="icon/instagram.png" alt=""></a>
+                <a href=""><img src="icon/telegram.png" alt=""></a>
+                <a href=""><img src="icon/twitter.png" alt=""></a>
+            </div>
+            <div id="copyright">مافی سەرجەم بەرهەمەکان پارێزراوە بۆ<br>(تۆپ فیلم)</div>
+        </footer>
+    </div>
+</body>
+
+</html>

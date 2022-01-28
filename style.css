@@ -1,0 +1,882 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: speda;
+    src: url(Speda.ttf);
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.contents {
+    padding-bottom: 5rem;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+#seriespage {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    background-image: url(backgrounds/bg5.jpg);
+    background-attachment: fixed;
+}
+
+#animpage {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    background-image: url(backgrounds/bg7.jpg);
+    background-attachment: fixed;
+}
+
+#filmpage {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    background-image: url(backgrounds/bg6.jpg);
+    background-attachment: fixed;
+}
+
+#homepage {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: bg 25s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url(backgrounds/bg1.png);
+    background-attachment: fixed;
+}
+
+@keyframes bg {
+    0% {
+        background-image: url(backgrounds/bg1.png);
+    }
+
+    30% {
+        background-image: url(backgrounds/bg5.jpg);
+    }
+
+    60% {
+        background-image: url(backgrounds/bg3.jpg);
+    }
+
+    90% {
+        background-image: url(backgrounds/bg4.jpg);
+    }
+
+    100% {
+        background-image: url(backgrounds/bg1.png);
+    }
+}
+
+@keyframes bg-mob {
+    0% {
+        background-image: url(backgrounds/mob/bg1.jpg);
+    }
+
+    10% {
+        background-image: url(backgrounds/mob/bg2.jpg);
+    }
+
+    25% {
+        background-image: url(backgrounds/mob/bg3.jpg);
+    }
+
+    35% {
+        background-image: url(backgrounds/mob/bg4.jpg);
+    }
+
+    50% {
+        background-image: url(backgrounds/mob/bg5.jpg);
+    }
+
+    60% {
+        background-image: url(backgrounds/mob/bg6.jpg);
+    }
+
+    70% {
+        background-image: url(backgrounds/mob/bg7.jpg);
+    }
+
+    80% {
+        background-image: url(backgrounds/mob/bg8.jpg);
+    }
+
+    90% {
+        background-image: url(backgrounds/mob/bg9.jpg);
+    }
+
+    100% {
+        background-image: url(backgrounds/mob/bg1.jpg);
+    }
+}
+
+.nav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.navbar {
+    list-style: none;
+    text-align: center;
+    background-color: #1A5F7A;
+    border-radius: 30px;
+    margin: 10px auto;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 60px;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.6);
+}
+
+.nav .navbar li {
+    display: inline-block;
+}
+
+.nav .navbar li a {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: speda;
+    text-transform: uppercase;
+    margin: 0 10px;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+.nav .navbar li a:hover {
+    background-color: #072227;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.nav .navbar li a:after {
+    transition: 0.5s;
+}
+
+.navbar .search input {
+    height: 25px;
+    border-radius: 20px;
+    border: 1px solid white;
+    outline: none;
+    font-family: speda;
+    width: 200px;
+}
+
+.navbar .search button {
+    height: 35px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+    margin: auto 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.navbar .search button:hover {
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#homepage .centre {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 400px auto 0;
+}
+
+#filmpage .centre,
+#seriespage .centre,
+#animpage .centre {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 10px auto 0;
+    z-index: 1;
+}
+
+.centre h1 {
+    text-align: center;
+    display: flex;
+    color: #fff;
+    font-family: speda;
+    align-items: center;
+    margin: 0;
+    z-index: 1;
+}
+
+.centre h1 hr {
+    color: #1A5F7A;
+    background-color: #1A5F7A;
+    height: 5px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0 10px 4px #fff;
+    margin: 0 20px 0 20px;
+    z-index: 1;
+}
+
+.all-cards a,
+.all-cards2 a {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 0;
+    margin: 20px 20px;
+    width: 200px;
+    height: 300px;
+    z-index: 1;
+}
+
+.all-cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 0;
+    margin: 0px auto 0;
+}
+
+.all-cards2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 0;
+    margin: 0 auto 0;
+}
+
+.card {
+    background-color: transparent;
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.card-in {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+}
+
+.card:hover .card-in {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 10px;
+}
+
+.card-back {
+    background-color: #1A5F7A;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+}
+.card-back p {
+    font-family: speda;
+}
+.card-back button {
+    background-color: rgb(207, 178, 10);
+    border-radius: 10px;
+    border: none;
+}
+.card-front img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.name {
+    text-decoration: none;
+    font-family: speda;
+    color: #fff;
+    margin: 0 0 5px 0;
+    padding: 0;
+    white-space: nowrap;
+    text-align: center;
+    width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.footer {
+    margin-top: 100px;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #1A5F7A;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#socials img {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+    margin-top: 5px
+}
+
+#copyright {
+    text-align: center;
+    font-family: speda;
+    color: white;
+    font-weight: 200;
+    margin-top: 0;
+    margin-right: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: right;
+    width: 60%;
+    margin: 400px auto 0;
+    z-index: 2;
+}
+
+.multipleSelection {
+    width: 130px;
+    background-color: #1A5F7A;
+    border-radius: 10px;
+    margin-left: 10px;
+    z-index: 2;
+}
+
+.selectBox {
+    position: relative;
+    z-index: 2;
+}
+
+.selectBox select {
+    width: 100%;
+    font-family: speda;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+#checkBoxes2 a {
+    color: white;
+    font-family: speda;
+    text-decoration: none;
+    width: 130px;
+    text-align: center;
+    margin-top: 5px;
+    z-index: 2;
+}
+
+#checkBoxes label {
+    color: white;
+    font-family: speda;
+    z-index: 2;
+}
+
+#checkBoxes,
+#checkBoxes2 {
+    display: none;
+    position: absolute;
+    background-color: #1A5F7A;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+#checkBoxes label,
+#checkBoxes2 a {
+    display: block;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+#checkBoxes label:hover,
+#checkBoxes2 a:hover {
+    background-color: #4F615E;
+}
+
+.navResponsive {
+    width: 100%;
+    background: #1A5F7A;
+    margin: 10px 0 auto auto;
+    display: none;
+    border-radius: 30px;
+}
+
+.navResponsive .search-responsive {
+    text-align: right;
+    justify-content: space-between;
+    display: flex;
+}
+
+.search-responsive input {
+    height: 40px;
+    margin: 10px;
+    margin-bottom: 0;
+    margin-left: 5px;
+    border-radius: 20px;
+    border: 1px solid white;
+    outline: none;
+    font-family: speda;
+    width: 150px;
+}
+
+.search-responsive button {
+    height: 40px;
+    width: 50px;
+    margin: 10px;
+    margin-bottom: 0;
+    margin-right: 0;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.navResponsive span {
+    padding: 20px 10px;
+    background: #2d2f31;
+    color: white;
+    font-size: 1.2em;
+    font-variant: small-caps;
+    cursor: pointer;
+    display: block;
+
+}
+
+.navResponsive span::after {
+    float: right;
+    right: 10%;
+    content: "";
+}
+
+.slide {
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    text-align: right;
+    transition: height .4s ease;
+}
+
+.slide li {
+    padding: 5px;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.slide li a {
+    text-decoration: none;
+    color: white;
+    font-family: speda;
+    font-size: 20px;
+}
+
+.slide li:hover {
+    background-color: #072227;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.slide li:after {
+    transition: 1s;
+}
+
+#touch {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch:checked+.slide {
+    height: 280px;
+    margin-top: 60px;
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+    #homepage {
+        background-image: url(backgrounds/mob/bg1.jpg);
+        animation: bg-mob 100s linear infinite 1s;
+    }
+
+    #filmpage {
+        background-image: url(poster/film/dune.jpg);
+    }
+
+    #animpage {
+        background-image: url(poster/anim/thelionking.jpeg);
+    }
+
+    #seriespage {
+        background-image: url(poster/series/viking.jpg);
+    }
+
+    .all-cards,
+    .all-cards2 {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .search-responsive input {
+        width: 80px;
+    }
+
+    .search-responsive button {
+        width: 32px;
+        font-size: small;
+    }
+
+    .slide li a {
+        font-size: small;
+    }
+
+    .all-cards a,
+    .all-cards2 a {
+        margin: 10px;
+        width: 150px;
+        height: 250px;
+    }
+
+    .card {
+        width: 150px;
+        height: 250px;
+    }
+
+    .name {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .card-front img {
+        width: 150px;
+        height: 230px;
+    }
+
+    .card-in {
+        width: 150px;
+        height: 230px;
+    }
+
+    .card-back {
+        font-size: 10px;
+        width: 150px;
+        height: 230px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navResponsive {
+        display: flex;
+    }
+
+    .contents {
+        padding-bottom: 10rem;
+    }
+
+    .footer {
+        height: 100px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #socials {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #copyright {
+        margin: auto;
+        margin-right: 10px;
+    }
+
+    .line {
+        font-size: medium;
+    }
+
+    .line hr {
+        width: 110px;
+        margin: 0;
+    }
+}
+
+
+@media only screen and (max-width: 1280px) and (min-width: 601px) {
+
+    .all-cards,
+    .all-cards2 {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .search-responsive input {
+        width: 180px;
+    }
+
+    .search-responsive button {
+        width: 40px;
+        font-size: small;
+    }
+
+    .slide li a {
+        font-size: small;
+    }
+
+    .all-cards a,
+    .all-cards2 a {
+        margin: 20px;
+        width: 120px;
+        height: 200px;
+    }
+
+    .card {
+        width: 120px;
+        height: 200px;
+    }
+
+    .card-front img {
+        width: 120px;
+        height: 200px;
+    }
+
+    .card-in {
+        width: 120px;
+        height: 200px;
+    }
+
+    .card-back {
+        font-size: 10px;
+        width: 120px;
+        height: 200px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navResponsive {
+        display: flex;
+    }
+
+    .contents {
+        padding-bottom: 10rem;
+    }
+
+    .footer {
+        height: 100px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #socials {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #copyright {
+        margin: auto;
+        margin-right: 10px;
+    }
+
+    .line hr {
+        width: 270px;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #homepage {
+        background-image: url(backgrounds/mob/bg1.jpg);
+        animation: bg-mob 100s linear infinite 1s;
+    }
+
+    #filmpage {
+        background-image: url(poster/film/dune.jpg);
+    }
+
+    #animpage {
+        background-image: url(poster/anim/thelionking.jpeg);
+    }
+
+    #seriespage {
+        background-image: url(poster/series/viking.jpg);
+    }
+
+    .all-cards,
+    .all-cards2 {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .search-responsive input {
+        width: 80px;
+    }
+
+    .search-responsive button {
+        width: 32px;
+        font-size: small;
+    }
+
+    .slide li a {
+        font-size: small;
+    }
+
+    .all-cards a,
+    .all-cards2 a {
+        margin: 5px;
+        width: 100px;
+        height: 200px;
+    }
+
+    .card {
+        width: 100px;
+        height: 200px;
+    }
+
+    .card-front img {
+        width: 100px;
+        height: 180px;
+    }
+
+    .card-in {
+        width: 100px;
+        height: 180px;
+    }
+
+    .card-back {
+        font-size: 8px;
+        width: 100px;
+        height: 180px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navResponsive {
+        display: flex;
+    }
+
+    .contents {
+        padding-bottom: 10rem;
+    }
+
+    .footer {
+        height: 100px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #socials {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #copyright {
+        margin: auto;
+        margin-right: 10px;
+    }
+
+    .line {
+        font-size: medium;
+    }
+
+    .line hr {
+        width: 60px;
+        margin: 0;
+    }
+
+    .multipleSelection {
+        width: 80px;
+    }
+
+    #checkBoxes2 a {
+        width: 80px;
+    }
+
+    #touch:checked+.slide {
+        height: 320px;
+        margin-top: 60px;
+    }
+}
